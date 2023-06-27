@@ -21,11 +21,22 @@
     font-family: 'Viga', sans-serif;
     font-family: 'Ysabeau Infant', sans-serif;
     -->
+
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    body {
+      background-color: purple;
+    }
+  </style>
     
   </head>
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <body>
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
   </body>
 </html>
