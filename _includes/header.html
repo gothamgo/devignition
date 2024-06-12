@@ -1,14 +1,26 @@
 <style>
-  #bannerimage {
-  width: 100%;
-  background-image: img({{site.url}}/images/DevIgnitionHeaderMedium.png);
-  height: 200px;
-  background-color: blue;
-  background-position: center;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.header__banner img {
+  max-width: 100%;
+  height: auto;
 }
 </style>
 
 <header>
-  <div id="bannerimage">
-  </div>
+<div class="header__banner">
+  <img src="{{site.url}}/images/DevIgnitionHeaderMedium.png" alt="Banner Image">
+</div>
 </header>
