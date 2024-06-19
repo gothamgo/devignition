@@ -11,6 +11,27 @@ layout: default
     margin: 0 auto;
     max-width: 800px;
   }
+  #sponsors {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #sponsors td, #sponsors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #sponsors tr:nth-child(even){background-color: #f2f2f2;}
+
+  #sponsors tr:hover {background-color: #ddd;}
+
+  #sponsors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
 </style>
 
 <div class="content-wrapper">
@@ -37,7 +58,7 @@ layout: default
       from D.C., NYC, and beyond! Check out the perks provided to sponsors below: 
     </p>
 
-    <table>
+<table id="sponsors">
   <tr>
     <th>Perks</th>
     <th>Gold ($7000)</th>
