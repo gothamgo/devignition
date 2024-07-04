@@ -80,5 +80,8 @@ layout: default
 </div>
 
 <script>
-  setTimeout(() => document.getElementById("subtitle").innerHTML = "We're back in 2024!", 5000);
+  function myFunction() {
+    document.getElementById("subtitle").innerHTML = "We're back in 2024!"
+  }
+  setTimeout(() => myFunction, 5000);
 </script> 
