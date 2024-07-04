@@ -80,8 +80,10 @@ layout: default
 </div>
 
 <script>
+  const topics = ["Generative AI", "Machine Learning", "Big Data"];
   function myFunction() {
-    document.getElementById("subtitle").innerHTML = "We're back in 2024!" + Date.now();
+    inx = Math.random() * topics.length
+    document.getElementById("subtitle").innerHTML = "We're back in 2024!" + inx;
     setTimeout(myFunction, 5000)
   }
   setTimeout(myFunction, 5000);
