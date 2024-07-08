@@ -49,7 +49,7 @@ layout: default
 
     <h1>DevIgnition</h1>
   
-    <h2>Returns Nov 7, 2024!</h2>
+    <h2 id="subtitle">Returns Nov 7, 2024!</h2>
 
     <p>
       DevIgnition is a fun and informal community event run for and by the DC software development community. 
@@ -97,3 +97,14 @@ layout: default
     {% include organizers_panel.html %}
   
 </div>
+
+<script>
+  const topics = ["Generative AI", "Machine Learning", "Big Data", "Systems Architecture", "Artificial Intelligence", "Cloud Computing", "Data Analysis", "Data Collection", "Data Discovery", "Data Workflow", "Data Management", "Data Science", "Data Visualization", "DevOps", "Application Frameworks", "Human Skills", "Large Language Models", "Natural Language Processing", "Methodologies and Best Practices", "Process Management", "Open Source Software", "Programming Languages", "Security", "Software Testing and Quality Assurance", "Tools", "Trends and Techniques", "UI/UX Design"];
+  function myFunction() {
+    let inx = Math.floor(Math.random() * topics.length)
+    let subtitle = document.getElementById("subtitle");
+    subtitle.innerHTML = "We're all about " + topics[inx] + "!";
+    setTimeout(myFunction, 5000)
+  }
+  setTimeout(myFunction, 8000);
+</script> 
