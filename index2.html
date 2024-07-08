@@ -85,7 +85,7 @@ layout: default
 <script>
   const topics = ["Generative AI", "Machine Learning", "Big Data"];
   function myFunction() {
-    inx = Math.floor(Math.random() * topics.length)
+    let inx = Math.floor(Math.random() * topics.length)
     document.getElementById("subtitle").innerHTML = "We're all about " + topics[inx] + "!";
     setTimeout(myFunction, 5000)
   }
