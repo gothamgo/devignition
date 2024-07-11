@@ -4,8 +4,30 @@ layout: default
 
 <style>
   div.content-wrapper {
-    background-color: #0062AC;
+    /*background-color: #0062AC;*/
     padding: 20px 10px;
+    background: linear-gradient(42deg, #0065b1, #141932);
+    background-size: 400% 400%;
+
+    -webkit-animation: DevBackground 20s ease infinite;
+    -moz-animation: DevBackground 20s ease infinite;
+    animation: DevBackground 20s ease infinite;
+  }
+
+  @-webkit-keyframes DevBackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+  }
+  @-moz-keyframes DevBackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+  }
+  @keyframes DevBackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
   }
   div.content {
     margin: 0 auto;
