@@ -1,15 +1,24 @@
 <style>
   div.venue-wrapper {
     background-color: #D0ECE7;
-  }  
+  } 
+  /*
   div.img-column {
     float: left;
     width: 33.33%;
+  }
+  */
+  div.img-column {
+    float: left;
+    width: 50%;
   }
   div.img-row::after {
     content: "";
     clear: both;
     display: table;
+  }
+  div.extra {
+    display: none;
   }
   /*@media only screen and (max-width: 499px) {
     div.img-invis {
@@ -26,7 +35,7 @@
     <div class="img-column">
       <img src="{{site.url}}/images/2024/venue/15337117534_47bdd368f2_c.jpg" alt="DevIgnition Conference" style="width: 100%">
     </div>
-    <div class="img-column">
+    <div class="img-column extra">
       <img src="{{site.url}}/images/2024/venue/15337117534_47bdd368f2_c.jpg" alt="DevIgnition Conference" style="width: 100%">
     </div>
   </div>
