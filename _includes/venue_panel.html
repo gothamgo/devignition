@@ -8,16 +8,25 @@
     width: 33.33%;
   }
   */
-  div.img-column {
-    float: left;
-    width: 50%;
-  }
   div.img-row::after {
     content: "";
     clear: both;
     display: table;
   }
+  /*
+  div.img-column {
+    float: left;
+    width: 50%;
+  }
+  */
+  div.img-column {
+    float: left;
+    width: 100%;
+  }
   div.right-extra {
+    display: none;
+  }
+  div.left-extra {
     display: none;
   }
   /*@media only screen and (max-width: 499px) {
