@@ -1,5 +1,57 @@
 <style>
   div.photos-wrapper {
+  } 
+  div.img-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media only screen and (min-width: 1101px) {
+    div.img-column {
+      float: left;
+      width: 33.33%;
+    }
+  }
+  @media only screen and (min-width: 701px) and (max-width: 1100px) {
+    div.img-column {
+      float: left;
+      width: 50%;
+    }
+    div.right-extra {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    div.img-column {
+      float: left;
+      width: 100%;
+    }
+    div.left-extra {
+      display: none;
+    }
+    div.right-extra {
+      display: none;
+    }
+  }
+</style>
+
+<div class="photos-wrapper">
+  <div class="img-row">
+    <div class="img-column left-extra">
+      <img src="{{site.url}}/images/frphoto03Medium.png" alt="DevIgnition Conference" style="width: 100%">
+    </div>
+    <div class="img-column">
+      <img src="{{site.url}}/images/frphoto01Medium.png" alt="DevIgnition Conference" style="width: 100%">
+    </div>
+    <div class="img-column right-extra">
+      <img src="{{site.url}}/images/frphoto02Medium.png" alt="DevIgnition Conference" style="width: 100%">
+    </div>
+  </div>
+</div>
+
+<!--
+<style>
+  div.photos-wrapper {
     background-color: #D0ECE7;
   }  
   div.img-column {
@@ -31,3 +83,4 @@
     </div>
   </div>
 </div>
+-->
